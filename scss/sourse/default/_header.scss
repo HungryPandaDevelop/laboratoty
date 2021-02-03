@@ -1,0 +1,117 @@
+.stub {
+  height: 60px;
+}
+
+header {
+  @include positionElement(100%, 60px, 0, 0, left, top, 5, block, fixed);
+  background: $whiteColor;
+
+
+  .main-grid {
+    height: 100%;
+  }
+
+  .btn-wc {
+    grid-column: span 3;
+    display: flex;
+
+    .btn {
+      margin: auto;
+      color: $orangeColor;
+      border: 0;
+      text-decoration: underline;
+    }
+  }
+
+  .border {
+    @include positionElement(calc(100% - 100px), 1px, 50px, 0, left, bottom);
+    background: $grayColor;
+  }
+}
+
+nav {
+
+  grid-column: span 8;
+  display: flex;
+  max-width: 810px;
+
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul {
+    width: 100%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  li {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.second-nav {
+  grid-column: span 1;
+
+  li {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+
+
+.logo {
+  grid-column: span 2;
+  margin: 0px 0 0;
+  position: relative;
+  display: flex;
+
+  a {
+    margin: auto;
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+.ico {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hamburger-container {
+  grid-column: span 1;
+  position: relative;
+  display: flex;
+}
+
+
+.feedback-container {
+  grid-column: span 2;
+  display: flex;
+  font-family: "bold";
+
+  a {
+    text-decoration: none;
+  }
+
+  .feedback {
+    margin: auto;
+  }
+}

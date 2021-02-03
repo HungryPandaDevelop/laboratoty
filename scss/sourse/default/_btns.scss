@@ -1,0 +1,28 @@
+.btn {
+  text-decoration: none;
+  border: 1px solid;
+  border-color: $blackColor;
+  padding: 7px 16px 9px;
+  background: none;
+  font: inherit;
+  display: inline-block;
+  color: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: $blackColor;
+    color: $whiteColor;
+  }
+
+  &.black {
+    background: $blackColor;
+    color: $whiteColor;
+  }
+
+  &.white {
+    background: $whiteColor;
+    color: $blackColor;
+    border-color: $whiteColor;
+  }
+}

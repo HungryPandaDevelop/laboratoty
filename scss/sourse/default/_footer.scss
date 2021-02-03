@@ -1,0 +1,32 @@
+footer {
+  border-top: $grayColor;
+  padding: 15px 0 30px;
+  margin: 11px 0 0;
+
+  .main-grid {
+    height: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .btn-wc {
+    grid-column: span 3;
+    text-align: center;
+  }
+
+  .feedback-container .feedback {
+    margin-left: auto;
+  }
+
+  .copyright,
+  .create {
+    grid-column: span 8;
+  }
+
+  .create {
+    text-align: right;
+    color: $blueColor;
+  }
+}

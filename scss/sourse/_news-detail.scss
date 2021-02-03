@@ -1,0 +1,175 @@
+.header-second {
+  padding: 0px 50px 0;
+  min-height: 112px;
+
+  .btn-wc {
+    grid-column: span 2;
+    padding: 5px 0;
+  }
+
+
+
+  .breadcrumbs {
+    grid-column: span 14;
+    position: relative;
+    padding-top: 8px;
+
+    &::before {
+      content: "";
+      @include positionElement(1px, 30px, -20px, 0);
+      background: $grayColor;
+    }
+
+    a {
+      text-decoration: none;
+      margin-right: 2px;
+    }
+
+    span {
+      color: $orangeColor;
+    }
+  }
+}
+
+.btn-back {
+
+  text-decoration: none;
+
+  img {
+    width: 20px;
+    margin-right: 20px;
+  }
+
+  * {
+    vertical-align: middle;
+  }
+}
+
+
+.news-header {
+  font-size: $standartSecondSize;
+  min-height: 265px;
+
+  .data {
+    grid-column: 3/span 3;
+
+
+    b {
+      display: block;
+      margin: 0 0 2px;
+
+    }
+  }
+
+  h2 {
+    grid-column: span 7;
+  }
+
+  .hint {
+    text-align: right;
+    grid-column: 14/span 3;
+
+    b {
+      display: block;
+    }
+  }
+}
+
+.news-img {
+  padding: 0 50px;
+
+
+  .news-img-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.news-description {
+  max-width: 890px;
+  margin: 0 auto 175px;
+  position: relative;
+  padding-top: 90px;
+  font-size: $standartThreeSize;
+  line-height: 1.4;
+
+  .description-inner {
+    max-width: 74%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    line-height: 1.4;
+    margin: 0 0 48px;
+  }
+
+  p {
+    margin: 0 0 48px;
+  }
+
+
+}
+
+.ico-quote {
+  @include positionElement(25px, 20px, 0, -35px);
+  @include bgImageEl("../images/quote.png");
+}
+
+.news-slider-container {
+  position: relative;
+  margin-bottom: 50px;
+
+  .slider-num {
+    left: 0;
+    top: calc(100% - 30px);
+    font-size: $standartSize;
+  }
+}
+
+.news-detail-slider {
+
+  padding-bottom: 50px;
+
+  .owl-nav {
+    top: calc(100% - 35px)
+  }
+
+
+}
+
+.news-next {
+  grid-column: 6/ span 4;
+  margin: 0 0 165px;
+
+  h3 {
+    margin: 0 0 55px;
+  }
+
+  .data {
+    margin: 0 0 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .news-next-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  p {
+    max-width: 80%;
+  }
+}

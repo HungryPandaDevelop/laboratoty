@@ -1,0 +1,14 @@
+.mobile-menu.element-show(data-showEl="0")
+  .close
+  nav
+    ul
+      each val,index in ["О компании", "Новости","Продукция", "Контакты"]
+        li 
+          a(href="#")
+            = val 
+  .feedback-container
+    .feedback
+      a(href="tel:+88005559810" ) 8 (800) 555 - 98 - 10
+  .btn-container
+    .btn-wc
+      a.btn(href="#") Написать письмо

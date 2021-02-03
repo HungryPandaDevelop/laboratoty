@@ -1,0 +1,99 @@
+.slider-section {
+
+  padding: 0 50px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+
+
+.slider-inner {
+  overflow: hidden;
+  border-top: 1px solid $grayColor;
+  position: relative;
+
+  .owl-stage-outer {
+
+    overflow: visible;
+  }
+}
+
+.slider-owl {
+  padding-top: 70px;
+  height: 812px;
+
+
+  img {
+    width: 100%;
+  }
+}
+
+.slider-num {
+  @include positionElement(auto, auto, 0, 23px);
+
+  span,
+  .current,
+  .total {
+    display: inline-block;
+  }
+
+  span {
+    margin: 0 0px 0 3px;
+  }
+}
+
+.owl-nav {
+  @include positionElement(140px, auto, 0, 20px, right);
+}
+
+.owl-prev,
+.owl-next {
+  background: $grayColorSecond;
+  @include positionElement(60px, 30px, auto, 0);
+  margin: 0px 0px 0;
+  font-size: 0;
+  border-radius: 10px;
+
+}
+
+.owl-prev {
+  left: 0;
+  @include bgImageEl("../images/arrow-prev-grey.svg", 20px);
+
+  &:hover {
+    background-color: $blackColor;
+    background-image: url("../images/arrow-prev-white.svg");
+  }
+}
+
+.owl-next {
+  right: 0;
+  @include bgImageEl("../images/arrow-next-grey.svg", 20px);
+
+  &:hover {
+    background-color: $blackColor;
+    background-image: url("../images/arrow-next-white.svg");
+  }
+}
+
+.owl-dots {
+  @include positionElement(100%, auto, 40px, 30px, left, bottom);
+
+  .owl-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid $whiteColor;
+    margin: 10px;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      background: $whiteColor;
+    }
+  }
+}

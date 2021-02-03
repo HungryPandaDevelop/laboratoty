@@ -1,0 +1,33 @@
+
+//- .index
+// mobile-menu
+include mobile-menu.pug
+// mobile-menu
+
+// popup-form
+include popup-form.pug
+// popup-form 
+
+header
+  .main-grid
+    .logo
+      a(href="./index.html")
+        img(src="../images/logo.png")
+    nav
+      ul
+        each val in ["О нас","Оборудование","Типы испытаний","Свидетельства и Аттестаты","Новости"]
+          li  
+            a(href="#") 
+              = val
+    .btn-wc
+      a.btn.element-btn(href="#" data-showEl="1") Заказать испытание
+    .feedback-container
+      .feedback
+        a(href="tel:+74952238970" ) +7 (495) 223 - 89 - 70
+    nav.second-nav
+      ul
+        li
+          a(href="#") Контакты
+    .border
+    //- .hamburger-container
+    //-   .hamburger.element-btn(data-showEl="0")

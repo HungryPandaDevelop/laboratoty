@@ -1,0 +1,50 @@
+.hamburger {
+  @include bgImageEl("../images/ico-hamburger-black.png");
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: auto;
+}
+
+
+.mobile-menu {
+  @include positionElement(100%, 100%, 0, 0, left, top, 5, none, fixed);
+  background: $whiteColor;
+  text-align: center;
+
+  &.show {
+    display: block;
+  }
+
+  ul,
+  li {
+    display: block;
+  }
+
+  ul {
+    padding: 0;
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+
+  li {
+    padding: 15px;
+    font-size: $standartSize;
+  }
+
+  .feedback-container {
+    text-align: center;
+    margin: 0 0 30px;
+
+    .feedback {
+      width: 100%;
+    }
+  }
+
+  .close {
+    @include positionElement(15px, 15px, 0, 0, right);
+    @include bgImageEl("../images/close-b.png");
+    margin: 15px;
+    cursor: pointer;
+  }
+}

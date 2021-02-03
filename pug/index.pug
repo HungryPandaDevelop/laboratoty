@@ -1,0 +1,196 @@
+doctype html
+html
+	body
+		// head
+		include default/head.pug 
+		// head
+
+		// header
+		include default/header.pug
+		// header
+		
+		// main-section
+		.stub
+		// slider-owl 
+
+		// advantages-section
+		section.advantages-section.main-grid
+			.advantages-topic
+				h2 Проводим испытания и исследования любой сложности
+				p Лидер на рынке исследований
+					br
+					| и испытаний продукции
+			.advantages-img
+				img(src="../images/ico-advantages.png", alt="")
+			.advantages-items
+				.advantages-item
+					.item-inner
+						h2 30
+						p Регламентов
+							br
+							| ТР ТС
+				.advantages-item
+					.item-inner
+						h2 7 500 м
+							sup 2
+						p Площадь всей лаборатории
+				.advantages-item
+					.item-inner
+						h2 3 000 +
+						p Единиц новейшего оборудования
+			.advantages-banner
+				img(src="../images/advantages-banner.jpg", alt="")
+		// advantages-section
+
+		// about-section
+		.about-section.main-grid
+			.about-topic
+				h2 О нас
+				p Мы аккредитованы
+					br
+					| на 27 Технических Регламентов Таможенного Союза
+			.about-list-container
+				.about-list-item
+					h3 Испытательный центр
+					.about-list-description Наш испытательный центр - это команда высококвалифицированных специалистов. Миссия испытательного центра - максимально объективная оценка качества Вашей продукции на предмет соответствия российским и международным нормам и требованиям.
+				.about-list-item
+					h3 Ответственность
+					.about-list-description Мы ответственно относимся к своей работе, строго соблюдаем законодательство в части требований к аккредитованным испытательным лабораториям – мы компетентны в том, что мы делаем.
+				.about-list-item
+					h3 Эффективность
+					.about-list-description Эффективность нашей работы – своевременная реализация ваших планов по выпуску, продаже товаров на территории РФ и в странах Евразийского Экономического союза.
+				.about-list-item
+					h3 Клиенты
+					.about-list-description Среди наших клиентов – компании из 52 стран, в том числе крупнейшие мировые производители. Многолетний опыт работы в сфере сертификации и более 100 000 выполненных заказов обеспечили нам репутацию профессионального и надежного партнера.
+				.about-list-item
+					h3 Оборудование
+					.about-list-description Наш испытательный центр, площадью свыше 7 500 м² укомплектован более чем 3 000 единиц современного оборудования, обеспечивающего выполнение всех испытаний по Техническим Регламентам.
+			.quote-container
+				i
+				.quote
+					|Слоган или мотивационный призыв, повышающий уровень доверия
+					br
+					| по отношению к компании
+					span С вами с 1990 года
+		// about-section
+
+		// slider-owl
+		.main-grid
+			.slider-tabs
+				a.active(href="#" data-index="0") Аппаратура  
+				.delimetr
+				a(href="#" data-index="1") Лаборатории   
+		include default/slider-owl.pug
+		include default/slider-owl.pug
+		// slider-owl
+
+		// trials
+		section.trials-section
+			.main-grid
+				h2 Типы испытаний
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-1.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-2.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-3.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-4.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+		// trials
+		// order
+		section.order-section
+			form.form.form-grid
+					h2 Заказать испытание
+					input(type="text" placeholder="Фамилия")
+					input.border(type="mail" placeholder="Имя")
+					input.border-after(type="text" placeholder="Отчество")
+					input(type="text" placeholder="+ 7 (___) ___ - __ - __" class="phone-mask")
+					input.border(type="text" placeholder="Email" class="phone-mask")
+					input.border-after(type="text" placeholder="Компания" class="phone-mask")
+					textarea(placeholder="Сообщение")
+					label.checkbox
+						|Я даю свое согласие на обработку персональных данных
+						input.require(type="checkbox")
+						span
+					.btn-wc
+						input.btn.black.btn-send(type="submit" value="Отправить")
+		// order
+		// certificate
+		section.certificate-section
+			h2 Свидетельства и Аттестаты
+			section.slider-items-section
+				.slider-inner
+					.slider-items.owl-carousel
+						each val,index in ["","","","","","","",""]
+							.item
+								h3 Наименование документа
+								.certificate-img
+									img(src="../images/ico-doc.png", alt="")
+		// certificate
+		// news
+		section.news-section
+			h2 Новости
+			.slider-news.owl-carousel
+				each val,index in ["","","","","","","",""]
+					.item
+						img(src="../images/1.jpg", alt="")
+						.main-grid
+							.first-cell
+								.data 16.01.2020
+								h2 Испытания электронных датчиков утечки газа
+							.second-cell
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perspiciatis at quia eaque? Deserunt voluptatum neque ipsam nesciunt dolor veritatis beatae sint eligendi, ratione vel itaque rem odio sit ab.
+								.btn-wc
+									a.btn.white(href="#") Подробнее
+							
+		// news
+
+		// contacts
+		section.contacts-section
+			h2 Контакты
+			.main-grid
+				.contacts-item.border
+					h3 Контактный номер
+					.contacts-bottom
+						.cb-inner
+							a(href="#") + 7(921) 315 - 16 - 20
+				.contacts-item
+					h3 Электронная почта
+					.contacts-bottom
+						.cb-inner
+							a(href="#") email@info.ru
+				.contacts-item.border
+					h3 Адрес предприятия
+					.contacts-bottom
+						.cb-inner
+							| Москва, 107055 
+							br
+							|ул. Первомайская 29, корпус 5, офис 117
+				.contacts-item
+					h3 Режим работы
+					.contacts-bottom
+						.cb-inner
+							| Пн. - Пт.: 08.30 - 19.00
+							br
+							|Сб. - Вс.: 09.00 - 16.00
+		// contacts
+		// footer
+		include default/footer.pug
+		// footer
+

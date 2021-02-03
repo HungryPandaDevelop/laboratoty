@@ -1,0 +1,36 @@
+.service-description {
+  position: relative;
+  padding-top: 90px;
+  color: $grayColorThree;
+
+  h2 {
+    grid-column: 6/span 6;
+    font-size: $standartSecondSize;
+    position: relative;
+    font-family: "bold";
+  }
+
+  h3 {
+    grid-column: 3/span 2;
+    text-align: right;
+    color: $blackColor;
+  }
+
+  b {
+    display: block;
+  }
+
+  p {
+    grid-column: 6/span 6;
+    margin: 0 0 30px;
+  }
+}
+
+.trials-service {
+  padding-top: 0;
+}
+
+.order-service {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}

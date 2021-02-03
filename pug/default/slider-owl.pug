@@ -1,0 +1,10 @@
+section.slider-section
+  .slider-inner
+    .slider-num
+      .current 1
+      span из
+      .total 25
+    .slider-owl.owl-carousel
+      each val,index in ["","","",""]
+        .item
+          img(src="../images/"+(index+1)+".jpg", alt="")

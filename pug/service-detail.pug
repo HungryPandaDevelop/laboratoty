@@ -1,0 +1,132 @@
+doctype html
+html
+	body
+		// head
+		include default/head.pug 
+		// head
+
+		// header
+		include default/header.pug
+		// header
+		
+		// main-section
+		.stub
+
+ 
+		// advantages-section
+		section.advantages-section.main-grid
+			.advantages-topic
+				h2 Токсикологические испытания
+				p Лидер на рынке исследований
+					br
+					| и испытаний продукции
+			.advantages-img
+				img(src="../images/ico-service.png", alt="")
+			.advantages-items
+				.advantages-item
+					.item-inner
+						h2 217
+						p Проведенных
+							br
+							| испытаний
+				.advantages-item
+					.item-inner
+						h2 500 м
+							sup 2
+						p Площадь данной лаборатории
+				.advantages-item
+					.item-inner
+						h2 450
+						p Единиц новейшего оборудования
+			.advantages-banner
+				img(src="../images/service-detail.jpg", alt="")
+		// advantages-section
+
+		// service-detail
+		.service-description.main-grid
+				
+				h2 
+					.ico-quote
+					| Наш испытательный центр проводит исследования по показателям безопасности товаров народного потребления, детской продукции и др.
+				h3 Описание испытания
+				p Сущность токсикологических испытаний заключается в исследовании продукции для выявления содержания в ней химических соединений, способных оказывать токсическое действие на живые организмы и объекты окружающей среды. Оценка токсического воздействия необходима для подтверждения безопасности продукции в целом. Исследования проводятся с применением биологических клеточных тест-объектов, служащих средой для оценки токсичности.
+				p При проведении пробоподготовки такого рода продукции получают водную или воздушную вытяжку, которая в последующем исследуется на высокотехнологическом оборудовании.
+				h3 Перечень исследований
+				p  
+					b ТР ТС 007/2011
+					|"О безопасности продукции, предназначенной для детей и подростков"
+				p 
+					b ТР ТС 008/2011
+					|"О безопасности игрушек"
+				p  
+					b ТР ТС 009/2011
+					|"О безопасности парфюмерно-косметической продукции"
+				p 
+					b ТР ТС 017/2011
+					| "О безопасности продукции легкой промышленности"
+				p 
+					b ТР ТС 019/2011
+					| "О безопасности средств индивидуальной защиты"
+				h3 Описание испытания
+				p По итогу вы получите документы о результатах испытаний, оформленные в соответствии с требованиями. Технический отчет включает в себя протоколы измерений, сведения о сертификации приборов, которые использовались для их выполнения, необходимую разрешительную документацию.
+
+		// service-detail 
+
+		// slider-owl
+		include default/slider-owl.pug
+		// slider-owl
+
+	
+		// order
+		section.order-section.order-service
+			form.form.form-grid
+					h2 Заказать испытание
+					input(type="text" placeholder="Фамилия")
+					input.border(type="mail" placeholder="Имя")
+					input.border-after(type="text" placeholder="Отчество")
+					input(type="text" placeholder="+ 7 (___) ___ - __ - __" class="phone-mask")
+					input.border(type="text" placeholder="Email" class="phone-mask")
+					input.border-after(type="text" placeholder="Компания" class="phone-mask")
+					textarea(placeholder="Сообщение")
+					label.checkbox
+						|Я даю свое согласие на обработку персональных данных
+						input.require(type="checkbox")
+						span
+					.btn-wc
+						input.btn.black.btn-send(type="submit" value="Отправить")
+		// order
+		// trials
+		section.trials-section.trials-service
+			.main-grid
+				h2 Типы испытаний
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-1.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-2.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-3.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+				.trials-item
+					h3 Органолептические
+					.trials-img
+						img(src="../images/trials-4.png", alt="")
+					.trials-text Определение качества при помощи стандартных органов чувств человека
+					a.btn.black(href="#") Заказать
+			// trials
+
+
+		// footer
+		include default/footer.pug
+		// footer
+
